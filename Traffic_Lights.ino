@@ -61,6 +61,7 @@ void loop() {
   digitalWrite(LEDYellow, HIGH);  //Buzzer stays on for yellow
   delay(3000);
   digitalWrite(Buzzer, LOW);    //Turn off buzzer then repeat
+  digitalWrite(LEDYellow, LOW);
    
  }
  
