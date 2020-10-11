@@ -5,6 +5,7 @@ int LEDYellow = 4;
 int LEDRed = 5;
 int Buzzer = 6;
 int buttonFlag = 0;
+int i;
 
 
 // the setup routine runs once when you press reset:
@@ -44,23 +45,22 @@ void loop() {
   digitalWrite(LEDRed, HIGH);   //Turn on Red wait 12 sec
   delay(12000);
   
-  digitalWrite(buzzer, HIGH);   //Turn on buzzer wait 3 sec
+  digitalWrite(Buzzer, HIGH);   //Turn on buzzer wait 3 sec
   delay(3000);
 
-  digitalWrite(buzzer, LOW);    //Turn off red/buzzer
+  digitalWrite(Buzzer, LOW);    //Turn off red/buzzer
   digitalWrite(LEDRed, LOW);
   
   digitalWrite(LEDGreen, HIGH);  //Turn on green wait 12 sec
   delay(12000);
 
-  digitalWrite(buzzer, HIGH);   //Turn on buzzer wait 3 sec
+  digitalWrite(Buzzer, HIGH);   //Turn on buzzer wait 3 sec
   delay(3000);
 
   digitalWrite(LEDGreen, LOW);   //Turn off green turn on yellow
-  digitalWrite(LEDYellow, High);  //Buzzer stays on for yellow
+  digitalWrite(LEDYellow, HIGH);  //Buzzer stays on for yellow
   delay(3000);
-  digitalWrite(buzzer, LOW);    //Turn off buzzer then repeat
+  digitalWrite(Buzzer, LOW);    //Turn off buzzer then repeat
    
  }
  
-}
